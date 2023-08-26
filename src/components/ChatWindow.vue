@@ -1,8 +1,8 @@
 <template>
   <div class="chat-window">
     <div class="chat-window-header">
-      <h3 v-if="other_user.fistName">
-        {{ other_user.fistName + " " + other_user.lastName }}<br />
+      <h3 v-if="other_user.firstName">
+        {{ other_user.firstName + " " + other_user.lastName }}<br />
       </h3>
     </div>
     <conversation-area></conversation-area>
@@ -24,7 +24,7 @@ export default {
     ComposeSection,
   },
   computed: {
-    ...mapGetters(["current_user", "messages", "other_user"]),
+    ...mapGetters(["current_user", "other_user"]),
   },
   methods: {
     ...mapActions(["addMessagesAsync"]),

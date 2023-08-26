@@ -107,25 +107,7 @@ export default {
     height: 100%;
   }
 }
-.profile {
-  margin: 2px 0;
-  overflow: hidden;
-  transition: height 0.3s ease-in-out;
-  max-width: "48px";
-  max-height: "48px";
-  &.hide {
-    height: 0;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    border-radius: 50%;
-  }
-}
+
 .my-profile {
   color: #afafaf;
   align-self: flex-end;
